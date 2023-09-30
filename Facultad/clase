@@ -1,0 +1,8 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int patata;
+    cout<<"escriba un numero de dos digitos: "<<endl;cin>>patata;
+    cout<<patata%10<<patata/10;
+    return 0;
+}
