@@ -1,13 +1,17 @@
-/*esribe un programa que lea de la entrada estandar el precio de un producto y 
-muestre en la salida estandar el precio del producto al aplicarle el IVA
-*/
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 int main (){
-    float n1,n2, iva=0;
-    cout<<"ingrese el precio de su producto: "; cin>>n1;
-    cout<<"ingrese el porcentaje del iva: "; cin>>n2;
-    iva= ((n2*n1)/100)+n1;
-    cout<<"el precio de su producto junto al valor del iva es: "<<iva;
+    float num1,num2;
+    char signo;
+    cout<<"ingrese dos numeros y luego el tipo de operacion que desea realizar con su debido signo: "<<endl;
+    cin>>num1>>num2>>signo;
+    switch(signo){
+        case '+': cout<<"el resultado de la suma es: "<<num1+num2<<endl;break;
+        case '-': cout<<"el resultado de la resta es: "<<num1-num2<<endl;break;
+        case '*': cout<<"el resultado del producto es: "<<num1*num2<<endl;break;
+        case '/': cout<<"el resultado de la division es: "<<num1/num2<<endl;break;
+        case '%': cout<<"el resultado del resto es: "<<num1%num2<<endl;break;
+        case '^': cout<<"el resultado de la potencia es: "<<pow(num1,num2)<<endl;break;
+    }
     return 0;
 }
