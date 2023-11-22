@@ -13,11 +13,11 @@ int main()
     cout << "c=";
     cin >> c;
     // calculo y salida de datos
-    determinante = pow((b * b - 4 * a * c), 1 / 2);
+    determinante = pow(((b * b) - 4 * a * c), 1 / 2);
     if (determinante >= 0)
     {
-        cout << "x1=" << (-b + determinante) / 2 * a << endl;
-        cout << "x2=" << (-b - determinante) / 2 * a << endl;
+        cout << "x1=" << (-b + determinante) / (2 * a) << endl;
+        cout << "x2=" << (-b - determinante) / (2 * a) << endl;
     }
     else
     {

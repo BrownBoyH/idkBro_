@@ -1,19 +1,27 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-int main(){
-    int x;
-    cout<<"digite un numero positivo: "<<endl;
-    cin>>x;
-    if((x%2==0)&&(x>0)){
-        cout<<"el numero ingresado es par y positivo"<<endl;
+int main()
+{
+    // w a s d
+    char tecla;
+    cin >> tecla;
+    while(tecla=='W'||tecla=='S'||tecla=='D'||tecla=='A'){ 
+    if (tecla == 'W' || tecla == 'w')
+    {
+        cout << "Adelante"<<endl;
     }
-    else{
-        if((x%2>0)&&(x>0)){
-            cout<<"el numero no es impar y positivo"<<endl;
-        }
+    else if (tecla == 's' || tecla == 'S')
+    {
+        cout << "atras" << endl;
     }
-    if(x<0){
-        cout<<"el numero debe ser positivo"<<endl;
+    else if (tecla == 'd' || tecla == 'D')
+    {
+        cout << "derecha" << endl;
+    }
+    else if (tecla == 'A' || tecla == 'a')
+    {
+        cout << "izquierda" << endl;
+    }cin>>tecla;
     }
     return 0;
 }

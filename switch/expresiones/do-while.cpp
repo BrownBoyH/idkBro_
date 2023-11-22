@@ -2,11 +2,12 @@
 using namespace std;
 int main()
 {
-    int n;
-    cin >> n;
-    for (int i = 0; i <= n; i = i + 2)
+    int i = 0;
+    do
     {
         cout << i << endl;
-    }
+        i = i + 2;
+    } while (i <= 20);
+
     return 0;
 }
